@@ -1,1 +1,57 @@
+1. File Creation
+Used the echo command to create the file named sample_data.txt with some sample text in it.
+used ls -l ~/sample_data.txt command to verify the file
+used cat ~/sample_data.txt to verify the sample text
+refer file Q3-01 to review the commands executed and their outputs.
 
+2. Hard Link Creation
+used ln command to create a hard link of the sample_data file.
+refer file Q3-02 to review the commands executed and their outputs.
+Explanation: The `ln` command creates hard or soft (symbolic) links between files, allowing multiple references to the same data.
+
+3. Symbolic Link Creation
+used ln -s command to create a soft link of the sample_data file.
+refer file Q3-03 to review the commands executed and their outputs.
+Explanation: The `ln` command creates hard or soft (symbolic) links between files, allowing multiple references to the same data.
+
+4. Inode Verification
+used ls -i command to verify the inodes of the three files: sample_data.txt, sample_hard.txt and sample_soft.txt.
+The inode of the sample_data.txt file and sample_hard.txt file is the same. Thus validating the hard link creation.
+The inode of the sample_soft.txt is different thus validating the soft link creation.
+refer file Q3-04 to review the commands executed and their outputs.
+
+5. Inode analysis
+Hard links (sample_hard.txt) point directly to the same inode as the original file (sample_data.txt), meaning they are multiple directory entries referencing the same data blocks.
+
+6. File Metadata Inspection
+used stat command to display the file metadata of sample_data.txt
+refer file Q3-06 to review the commands executed and their outputs.
+Explanation: stat command displays detailed file or filesystem metadata including inode, permissions, size, and access/modification/change timestamps.
+
+7. Disk Usage Check
+used du command to display the disk usage of all the files and subdirectories within the home directory.
+used du -h to humanize the output (in KB/MB/GB)
+refer file Q3-07 to review the commands executed and their outputs.
+Explanation: The `du` command estimates file and directory space usage in a specified location.
+
+8. File Size Overview
+used du -ah command to display the files sizes of all files and directories. -a option is to include all files and directories within the home directory and -h is to humanize the file size.
+refer file Q3-08 to review the commands executed and their outputs.
+
+9. Link Deletion Test
+used rm command to delete the soft link (sample_soft.txt)
+used ls command to verify that the file has been deleted
+used cat command with the original file to verify its contents.
+refer file Q3-09 to review the commands executed and their outputs.
+
+10. Disk Utility Demonstration
+Here are some useful du command options:
+-a: show all files not just directories
+-s: summarize
+-h: humanize
+Here are some useful df command options:
+df command is used to view filesystem usage
+df -h: Show disk usage of all filesystems in a human readable form
+-T: Show filesystem type (ext4, xfs, tmpfs, etc.)
+-i: Show inode usage instead of block usage
+refer file Q3-10 to review the commands executed and their outputs.
