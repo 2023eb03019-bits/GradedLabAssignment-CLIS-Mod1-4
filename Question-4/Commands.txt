@@ -1,1 +1,42 @@
+1. System Uptime Verification
+The uptime command shows how long the system has been running, the number of users currently logged in, and the system load averages for the past 1, 5, and 15 minutes.
+refer file Q4-01 to review the commands executed and their outputs.
 
+2. User Process Listing
+used command ps -u $USER to list all the processes running on local host currently. The list of processes running currently is exhaustive.
+
+3. CPU Usage Analysis
+used command top -u $USER to view the list of all processes and their cpu usage.
+refer file Q4-03 to review the commands executed and their outputs.
+
+4. Background Process Execution
+used command sleep 300 & to start a sleep command in the background
+jobs -l verified that the command is running
+refer file Q4-04 to review the commands executed and their outputs.
+
+5. Process Priority Management
+used a set of commands to create a process, change the niceness (priority) of the process and display the niceness.
+refer file Q04-05 to reviee the commands executed and their outputs.
+Explanation:
+sleep command: Pauses execution for a specified number of seconds.
+pid variable: Stores the Process ID of the most recently started background job; pid=$! captures it for later use.
+nice command: Launches a process with a custom scheduling priority (niceness).
+renice command: Changes the niceness of an already running process.
+
+6. Memory Usage Monitoring
+top -u command also shows the memory usage of all the processes.
+refer file Q4-03 to review the commands executed and their outputs.
+
+7. Disk Space Inspection
+used the df command with option -h to humanize the values to inspect the disk space.
+refer file Q4-07 to review the commands executed and their outputs.
+
+8. Shell Identification
+used echo $SHELL command to display the name of the shell in use.
+Explanation: The command echo $SHELL prints the path to the default login shell
+refer file Q4-08 to review the commands executed and their outputs.
+
+9. Output Redirection
+used unamea command to print all system information and stored it in system_report.txt.
+verified the file contents using cat command.
+refer file Q4-09 to review the commands executed and their outputs.
