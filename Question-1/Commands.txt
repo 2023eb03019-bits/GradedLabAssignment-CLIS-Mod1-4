@@ -1,1 +1,56 @@
+1. User Identity Verification
+Command used: whoami && groups
+'whoami' shows the username and 'groups' shows all the groups I belong to.
+refer screenshot file Q1 1 for verifying command and output on terminal
 
+2. Workspace Validation
+Command used: pwd && ls -la
+'pwd' prints the current working directory and 'ls' '-la' lists all files/directories (including hidden ones) in long format with ownership, permissions, size, and timestamp.
+refer screenshot file Q1 2 for verifying command and output on terminal
+
+3. Environment Confirmation File
+Created a file named user_info.txt and wrote the line "Linux user environment verified".
+Command used: echo "Linux user environment verified" > user_info.txt to execute the above.
+Command used: cat user_info.txt to display the text from the file on the terminal.
+refer screenshot file Q1 3 for verifying command and output on terminal
+
+4. File Integrity Check
+Command used to display the number of characters present in user_info.txt is 'wc -m user_info.txt'
+wc -m counts characters (including spaces and newline).
+refer screenshot file Q1 4 for verifying command and output on terminal
+
+5. Learning the tools [mkdir]
+Command used to access the manual page of mkdir command: man mkdir
+A useful option is -p. It creates parent directories as needed, and does not raise an error if the directory already exists. This allows creating nested directory structures with a single command.
+I have used the command mkdir -p BITS/CLIS/SGA to create a BITS folder and CLIS sub folder in BITS and SGA subfolder in CLIS.
+refer screenshot Q1 5a for the manual of mkdir and Q1 5b to see the commands used to create the folders
+
+6. Home Directory Inspection
+A simple command to alphabetically list the contents of the home directory is ls -la.
+I have used ls -la ~ | sort -k9 to list the contents of the home directory and sort the list alphabetically by the 9th column which is the column for filenames.
+refer screenshot Q1 6 for the list the contents of the home directory sorted in alphabetical order.
+
+7. Log Investigation
+Created a file named log.txt and entered the following words one below the other in the file: BITS, student, Command Line Interface and Scripting, admin, success.
+Then I displayed the file contents to verify using the cat command followed by the file name
+Then I searched for the word 'admin' inside the file log.txt and displayed only the matching line using the command: grep "admin" log.txt
+refer screenshot Q1 7 for all the steps and output
+
+8. System Information check
+Used the command uname -r to show the linux kernel version currently running
+used the command uname -a to show more detailed kernel information
+refer screenshot Q1 8 for all the steps and output
+
+9. Network Connectivity Test
+Used command ping -c 1 www.google.com to send 1 ICMP request packet to www.google.com
+This command tests both DNS resolution and network connectivity to the remote host.
+refer screenshot Q1 9 for the command and its output.
+
+10. System Health Awareness
+Used the command 'uptime' to display system uptime.
+The uptime command shows three key pieces of information in this order:
+Current time – system clock time
+Uptime duration – how long the system has been running since last boot
+Number of logged-in users – count of users currently logged in
+Load averages – three values representing system load over the last 1, 5, and 15 minutes
+refer screenshot Q1 10 for the command and its output.
