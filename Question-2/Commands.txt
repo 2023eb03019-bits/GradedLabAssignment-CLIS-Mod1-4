@@ -3,27 +3,56 @@ Created a home directory with name CLIS-SGA using the command mkdir CLIS-SGA
 Used command cd CLIS-SGA to enter the home directory
 Created a directory called documents inside the home directory using the command mkdir directory
 Used command ls to show the contents of the home directory and verified that a new directory called documents is created.
-refer file Q2-01 to review the commands and the output
+refer file Q2-01 to review the executed commands and the output
 
 2. File creation
 Used command cd documents to enter the directory.
 Used command touch plan.txt to create the text file.
 Used command ls to verify the file creation.
-refer file Q2-02 to review the commands and the outputs.
+refer file Q2-02 to review the executed commands and the outputs.
 
 3. Content addition
 added sample content into the file plan.txt using the echo command.
 verified the content addition using the cat command to read the file.
-refer file Q2-03 to review the commands and the outputs.
+refer file Q2-03 to review the executed commands and the outputs.
 
 4. File Metadata Verification
 Used command ls -l to view the file metadata.
 The output will show the following details:
 File permissions (e.g., -rw-r--r--), Number of links, Username (owner), Group name, File size, Timestamp, and Filename.
-refer file Q2-04 to review the commands and the outputs.
+refer file Q2-04 to review the executed commands and the outputs.
 
 5. File Duplication
 Used command cp plan.txt plan_copy.txt to duplicate the file.
 used command ls -l plan*.txt to verify the 2 files in the directory
 used command cat plan_copy.txt to verify the successful duplication of the contents in the copied file.
-refer file Q2-05 to review the commands and the outputs.
+refer file Q2-05 to review the executed commands and the outputs.
+
+6. Directory Renaming
+First, I used command cd .. to go back to the home directory (CLIS-SGA).
+Used command mv documents project_documents to rename the directory.
+Used command ls to view the name change.
+refer file Q2-06 to review the executed commands and the output.
+
+7. Archival Structure
+Went into directory named project_documents using the command cd project_documents
+Used command mkdir archive to create a sub directory named as archive
+Used ls command to verify the subdirectory creation
+refer file Q2-07 to review the executed commands and the output.
+
+8. File Organization
+Since I was already inside the directory, I used the command mv plan_copy.txt archive/ to move the file into the archive subdirectory.
+Went into the archive subdirectory using the command cd archive
+used ls command to verify the relocation of the file.
+refer file Q2-08 to review the executed commands and the outputs.
+
+9. Recursive Listing
+To recursively list all files and subdirectories of project_documents directory, I used the command ls -R.
+Thus I was able to see the files and sub directories in the project_documents directory and the file in the archive subdirectory.
+refer file Q2-09 to review the executed commands and the outputs.
+
+10. Path Verification
+First I entered the archive subdirectory using the command cd archive
+Used command ls to verify that the file named plan_copy.txt exists
+Used command realpath plan_copy.txt to see the full path from the root.
+refer file Q2-10 to review the executed commands and the outputs.
