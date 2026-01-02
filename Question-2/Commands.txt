@@ -1,1 +1,29 @@
+1. Project Workspace Setup
+Created a home directory with name CLIS-SGA using the command mkdir CLIS-SGA
+Used command cd CLIS-SGA to enter the home directory
+Created a directory called documents inside the home directory using the command mkdir directory
+Used command ls to show the contents of the home directory and verified that a new directory called documents is created.
+refer file Q2-01 to review the commands and the output
 
+2. File creation
+Used command cd documents to enter the directory.
+Used command touch plan.txt to create the text file.
+Used command ls to verify the file creation.
+refer file Q2-02 to review the commands and the outputs.
+
+3. Content addition
+added sample content into the file plan.txt using the echo command.
+verified the content addition using the cat command to read the file.
+refer file Q2-03 to review the commands and the outputs.
+
+4. File Metadata Verification
+Used command ls -l to view the file metadata.
+The output will show the following details:
+File permissions (e.g., -rw-r--r--), Number of links, Username (owner), Group name, File size, Timestamp, and Filename.
+refer file Q2-04 to review the commands and the outputs.
+
+5. File Duplication
+Used command cp plan.txt plan_copy.txt to duplicate the file.
+used command ls -l plan*.txt to verify the 2 files in the directory
+used command cat plan_copy.txt to verify the successful duplication of the contents in the copied file.
+refer file Q2-05 to review the commands and the outputs.
